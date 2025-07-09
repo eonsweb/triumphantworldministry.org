@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "type": "theme",
+    "year": 2025,
+    "name": "Grace Upon Grace",
+    "bible_verse": "John 1:16",
+    "bible_quotation": "And of His fullness we have all received, and grace for grace.",
+    "image": "./image/theme/church-bg.png"
+  },
+  {
+    "id": 2,
+    "type": "book",
+    "title": "The Mystery of midnight prayers",
+    "summary": "Life is a battlefield; the war goes on throughtout each passing day and it is intensive at night. The devil looks unstoppable but prayer falls him flat anytime believers pray. The mystery of midnight is an inspired book meant to fire you up to stop the devil befor he stops you.",
+    "image": "./image/books/mystery-book.png"
+  }
+]

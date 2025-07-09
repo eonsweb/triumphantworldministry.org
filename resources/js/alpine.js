@@ -1,0 +1,165 @@
+import Alpine from "alpinejs";
+import Swiper from "swiper";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
+
+document.addEventListener("alpine:init", () => {
+    // color Mode
+    Alpine.store("ui", {
+        colorMode: "light",
+    });
+    // Navbar
+    Alpine.data("navbar", () => ({
+        open: false,
+        isScrolled: false,
+        init() {
+            console.log("isScrolled :", this.isScrolled);
+            this.resetOpenState();
+            window.addEventListener("resize", () => this.resetOpenState);
+            window.addEventListener("scroll", () => {
+                this.isScrolled = window.scrollY > 50;
+            });
+        },
+        toggle() {
+            this.open = !this.open;
+            console.log(this.open);
+        },
+        resetOpenState() {
+            const mdBreakPoint = 768;
+            if (window.innerWidth >= mdBreakPoint) {
+                this.open = true;
+            } else {
+                this.open = false;
+            }
+        },
+    }));
+
+    // Banner / Hero Component
+    Alpine.data("heroSliderComponent", () => ({
+        heroSlides: [],
+        swiperInstance: null,
+        initSwiper() {
+            this.$nextTick(() => {
+                // Destroy existing Swiper instance if it exists
+                if (this.swiperInstance) {
+                    this.swiperInstance.destroy(true, true);
+                }
+
+                const shouldLoop = this.heroSlides.length > 1;
+                this.swiperInstance = new Swiper("#hero", {
+                    modules: [Navigation, Pagination, Autoplay],
+
+                    loop: shouldLoop,
+                    autoplay: {
+                        delay: 50000,
+                        slidesPerView: 1,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        dynamicBullets: true,
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-nav-right",
+                        prevEl: ".swiper-nav-left",
+                    },
+                });
+            });
+        },
+        async fetchData() {
+            try {
+                const res = await fetch("./js/heros.json");
+                this.heroSlides = await res.json();
+
+                this.$nextTick(() => this.initSwiper());
+                console.log(this.heroSlides);
+            } catch (error) {
+                console.log("error loading heros slides", error.message);
+            }
+        },
+        init() {
+            this.fetchData();
+        },
+    }));
+
+    // Weekly Activities Component
+    Alpine.data("WeeklyActivitiesComponent", () => ({
+        activitySlides: [],
+        swiperInstance: null,
+        initSwiper() {
+            this.$nextTick(() => {
+                // Destroy existing Swiper instance if it exists
+                if (this.swiperInstance) {
+                    this.swiperInstance.destroy(true, true);
+                }
+
+                const shouldLoop = this.activitySlides.length > 1;
+                this.swiperInstance = new Swiper(".weekly-activities", {
+                    modules: [Navigation, Pagination, Autoplay],
+
+                    loop: shouldLoop,
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    autoplay: {
+                        delay: 50000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    },
+                });
+            });
+        },
+        async weeklyActivitiesData() {
+            try {
+                const res = await fetch("./js/church-activities.json");
+                this.activitySlides = await res.json();
+
+                this.$nextTick(() => this.initSwiper());
+
+                console.log("***** weekly activities");
+                console.log(this.activitySlides);
+            } catch (error) {
+                console.log("error loading heros slides", error.message);
+            }
+        },
+        init() {
+            this.weeklyActivitiesData();
+        },
+    }));
+
+    //Ministries Tab
+    Alpine.data("ministriesComponent", () => ({
+        activeTab: 1,
+        ministries: [],
+        async fetchMinistries() {
+            try {
+                const res = await fetch("./js/ministries.json");
+                this.ministries = res.json();
+                console.log("**** show ministries *******");
+                console.log(this.ministries);
+            } catch (error) {
+                console.log("error loading ministries:", error.message);
+            }
+        },
+        init() {
+            this.fetchMinistries();
+        },
+    }));
+});

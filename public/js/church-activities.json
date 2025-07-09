@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "day": "sunday",
+    "time": "8:30am - 11:00am",
+    "title": "Dominion Service",
+    "description": "Join us every Sunday for a powerful time of worship,prayer, and divine impartation",
+    "image": "image/weekly-activities/sunday-dominion-service.jpg"
+  },
+  {
+    "id": 2,
+    "day": "sunday",
+    "time": "4:00pm - 6:00pm",
+    "title": "Women of Insight | Women's Forum",
+    "description": "A gathering of women seeking wisdom and empowerment",
+    "image": "image/weekly-activities/sunday-womens-forum-service.jpg"
+  },
+  {
+    "id": 3,
+    "day": "tuesday",
+    "time": "6:00pm - 7:00pm",
+    "title": "Hour of Warriors",
+    "description": "A night of intense intercession and spiritual warfare for the next generation",
+    "image": "image/weekly-activities/tuesday-warriors-hour.jpg"
+  },
+  {
+    "id": 4,
+    "day": "wednesday",
+    "time": "9:00am - 12:00pm",
+    "title": "Destiny Hour",
+    "description": "Discover and align with God's purpose for your life",
+    "image": "image/weekly-activities/wednesday-destiny-hour.jpg"
+  },
+  {
+    "id": 5,
+    "day": "Friday (Dawn)",
+    "time": "4:00am - 5:00am",
+    "title": "Inspiration Hour | Angel 96.1 FM",
+    "description": "A night of intense intercession and spiritual warfare for the next generation",
+    "image": "image/weekly-activities/friday-dawn-inpirational-hour.jpg"
+  },
+  {
+    "id": 6,
+    "day": "Friday",
+    "time": "6:00pm - 8:00pm",
+    "title": "Worship & Prayer Service",
+    "description": "A night of intense intercession and spiritual warfare for the next generation",
+    "image": "image/weekly-activities/friday-worship-and-prayer-service.jpg"
+  }
+]
