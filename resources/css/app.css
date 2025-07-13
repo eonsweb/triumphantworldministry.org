@@ -44,20 +44,23 @@
     --color-secondary-900: oklch(21% 0.034 264.665);
     --color-secondary-950: oklch(13% 0.028 261.692);
 
-    --color-accent-50: oklch(97.1% 0.013 17.38);
-    --color-accent-100: oklch(93.6% 0.032 17.717);
-    --color-accent-200: oklch(88.5% 0.062 18.334);
-    --color-accent-300: oklch(80.8% 0.114 19.571);
-    --color-accent-400: oklch(70.4% 0.191 22.216);
-    --color-accent-500: oklch(63.7% 0.237 25.331);
-    --color-accent-600: oklch(57.7% 0.245 27.325);
-    --color-accent-700: oklch(50.5% 0.213 27.518);
-    --color-accent-800: oklch(44.4% 0.177 26.899);
-    --color-accent-900: oklch(39.6% 0.141 25.723);
-    --color-accent-950: oklch(25.8% 0.092 26.042);
+    --color-accent-50: oklch(98.4% 0.014 180.72);
+    --color-accent-100: oklch(95.3% 0.051 180.801);
+    --color-accent-200: oklch(91% 0.096 180.426);
+    --color-accent-300: oklch(85.5% 0.138 181.071);
+    --color-accent-400: oklch(77.7% 0.152 181.912);
+    --color-accent-500: oklch(70.4% 0.14 182.503);
+    --color-accent-600: oklch(60% 0.118 184.704);
+    --color-accent-700: oklch(51.1% 0.096 186.391);
+    --color-accent-800: oklch(43.7% 0.078 188.216);
+    --color-accent-900: oklch(38.6% 0.063 188.416);
+    --color-accent-950: oklch(27.7% 0.046 192.524);
 }
 
 @layer components {
+    .nav-list {
+        @apply list-none;
+    }
     .nav-link {
         @apply relative text-sm font-medium font-manrope text-gray-300 hover:text-white transition-colors duration-300 px-2 py-2;
     }
@@ -76,7 +79,7 @@
     }
 
     .mobile-nav-link {
-        @apply flex  items-center px-4 py-3 text-gray-300 rounded-lg transition-all
+        @apply flex  items-center  px-4 py-3 text-gray-300 rounded-lg transition-all
            hover:bg-gray-700 hover:text-white hover:pl-6
            active:bg-gray-600;
     }
@@ -86,25 +89,29 @@
     }
 
     .mobile-nav-icon {
-        @apply w-6 h-6 mr-3 stroke-2;
+        @apply w-5 h-5 mr-3;
     }
 
-    .cta-button {
+    .btn {
         @apply inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg;
     }
 
-    .cta-button.primary {
+    .btn.btn-primary {
         @apply bg-gradient-to-r from-primary-100 to-primary-200 text-gray-900 hover:bg-primary-100;
     }
 
-    .cta-button.secondary {
+    .btn.btn-secondary {
         @apply ring-2 ring-primary-100 text-primary-100 hover:bg-primary-100/5;
         padding: calc(0.875rem - 2px) calc(2rem - 2px);
     }
-    .cta-button.secondary::after {
+    .btn.btn-secondary::after {
         content: "";
         @apply absolute inset-0 rounded-lg;
         pointer-events: none;
+    }
+
+    .btn-cta {
+        @apply bg-gradient-to-r from-primary-100 to-primary-200 text-gray-900 items-center justify-center px-6 py-3 text-sm font-semibold rounded-full transition-all duration-300 transform hover:-translate-y-[3px]  hover:from-white hover:to-gray-300 hover:scale-[1.02] shadow-lg focus:ring-2 focus:ring-gray-200 focus:ring-offset-2 focus:ring-offset-gray-800;
     }
 
     .gradient-overlay {
@@ -126,44 +133,17 @@
         filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
     }
 
-    .pulse-animation {
-        animation: pulse 2s infinite;
+    .animate-pulse-outward {
+        animation: pulse-outward 2s infinite;
     }
-    @keyframes pulse {
+    @keyframes pulse-outward {
         0% {
-            box-shadow: 0 0 0 0 oklch(79.5% 0.184 86.047); /* --color-primary-500 */
+            box-shadow: 0 0 0 0 rgba(254, 214, 145, 0.7);
         }
-        70% {
-            box-shadow: 0 0 0 15px oklch(94.5% 0.129 101.54 / 0); /* --color-primary-200, fully transparent */
-        }
+
         100% {
-            box-shadow: 0 0 0 0 oklch(94.5% 0.129 101.54 / 0); /* reset to no pulse */
+            box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
         }
-    }
-
-    /* Tab session */
-}
-
-nav:hover .donate-btn {
-    background: white;
-    color: #111827;
-    transition: all 0.3s;
-}
-
-/* Tab Session */
-.ministry-card {
-    transition: all 0.5s ease;
-    animation: fadeIn 0.6s ease forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -213,19 +193,4 @@ nav:hover .donate-btn {
 .ministry-icon {
     background: linear-gradient(135deg, #0d9488, #115e59);
     box-shadow: 0 4px 10px rgba(13, 148, 136, 0.3);
-}
-
-.green-btn {
-    background: linear-gradient(135deg, #0d9488, #115e59);
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(13, 148, 136, 0.2);
-}
-
-.green-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(13, 148, 136, 0.3);
-}
-
-.header-glow {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }

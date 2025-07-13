@@ -7,7 +7,7 @@
                 </p>
                 <a
                 href="/prayer-request"
-                class="w-full sm:w-auto text-center green-btn text-white px-6 py-3 text-sm font-semibold rounded-full transition-all duration-300"
+                class="w-full sm:w-auto text-center btn-cta from-accent-600 to-accent-800 text-white"
                 >
                 Submit
                 </a>

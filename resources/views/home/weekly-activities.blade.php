@@ -1,15 +1,7 @@
 <section x-data="WeeklyActivitiesComponent" class="py-16 bg-gray-900">
             <!-- Badge -->
             <div class="text-center mb-12">
-                <div class="inline-flex items-center space-x-3 mb-6" data-aos="fade-up">
-                <div class="h-px w-8 gradient-overlay"></div>
-                <span
-                    class="text-lg font-semibold tracking-wide uppercase gradient-overlay bg-clip-text text-transparent"
-                    >Weekly Church Activities</span
-                >
-
-                <div class="h-px w-8 gradient-overlay"></div>
-                </div>
+               <x-badge title="Weekly church Activities" />
                 <h1 class="text-3xl md:text-4xl font-bold text-gray-400 mb-4">
                 Fortify Your Faith: Join Us For Our Weekly Worship services!
                 </h1>
@@ -60,11 +52,11 @@
 
                 <!-- Navigation buttons -->
                 <div
-                class="hidden md:block swiper-button-prev absolute top-1/2! -translate-y-1/2! -left-8! h-[40px]! w-[40px]! bg-yellow-100 hover:bg-yellow-500 rounded-full after:text-[24px]! after:text-gray-600! hover:after:font-extrabold! transition-all duration-300"
+                class="hidden! md:block swiper-button-prev absolute top-1/2! -translate-y-1/2! -left-8! h-[40px]! w-[40px]! bg-yellow-100 hover:bg-yellow-500 rounded-full after:text-[24px]! after:text-gray-600! hover:after:font-extrabold! transition-all duration-300"
                 ></div>
 
                 <div
-                class="hidden md:block swiper-button-next absolute top-1/2! -translate-y-1/2! -right-8! h-[40px]! w-[40px]! bg-yellow-100 hover:bg-yellow-500 rounded-full after:text-[24px]! after:text-gray-600! hover:after:font-extrabold! transition-all duration-300"
+                class="hidden! md:block swiper-button-next absolute top-1/2! -translate-y-1/2! -right-8! h-[40px]! w-[40px]! bg-yellow-100 hover:bg-yellow-500 rounded-full after:text-[24px]! after:text-gray-600! hover:after:font-extrabold! transition-all duration-300"
                 ></div>
             </div>
         </section>

@@ -184,12 +184,12 @@
     "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-bzho0234.css",
+    "file": "assets/app-C6Sdy6nk.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-CDjMYc9P.js",
+    "file": "assets/app-BzJIZzVP.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,

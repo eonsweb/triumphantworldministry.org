@@ -78,7 +78,7 @@
                     </li>
                     <li>
                         <a
-                        href="#"
+                        href="/prayer-request"
                         class="text-gray-400 hover:text-secondary transition"
                         >Prayer Requests</a
                         >

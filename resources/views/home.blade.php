@@ -789,7 +789,7 @@
         <!-- Desktop Tab Content -->
         <div class="hidden md:block p-6 md:p-8">
             <template x-for="ministry in ministries" :key="ministry.id">
-            <div x-show="activeTab === ministry.id" x-cloak class="ministry-card">
+            <div x-show="activeTab === ministry.id" x-cloak >
                 <div class="flex flex-col lg:flex-row gap-8">
                 <div class="lg:w-1/2 flex justify-center items-center">
                     <div class="relative">

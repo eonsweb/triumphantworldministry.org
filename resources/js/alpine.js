@@ -10,6 +10,7 @@ document.addEventListener("alpine:init", () => {
     // Navbar
     Alpine.data("navbar", () => ({
         open: false,
+        aboutDropdown: false,
         isScrolled: false,
         init() {
             console.log("isScrolled :", this.isScrolled);
@@ -22,6 +23,10 @@ document.addEventListener("alpine:init", () => {
         toggle() {
             this.open = !this.open;
             console.log(this.open);
+        },
+        toggleAboutDropdown() {
+            this.aboutDropdown = !this.aboutDropdown;
+            console.log(this.aboutDropdown);
         },
         resetOpenState() {
             const mdBreakPoint = 768;

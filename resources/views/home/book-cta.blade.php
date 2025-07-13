@@ -4,7 +4,7 @@ class=" bg-gradient-to-r from-secondary-100 to-secondary-50 flex items-center ju
     <div class="max-w-7xl mx-auto w-full">
         <!-- cta container -->
         <div
-        class="bg-gradient-to-r from-secondary-100 to-primary-50 rounded-2xl overflow-hidden shadow-xl"
+        class="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-2xl overflow-hidden shadow-xl"
         >
         <div class="container mx-auto px-4 py-12 md:py-16">
             <div
@@ -17,7 +17,7 @@ class=" bg-gradient-to-r from-secondary-100 to-secondary-50 flex items-center ju
                     class="absolute -top-6 -left-6 w-24 h-24 bg-primary-400 rounded-full opacity-20 z-0"
                 ></div>
                 <div
-                    class="absolute -bottom-6 -right-6 w-32 h-32 bg-secondary-400 rounded-full opacity-20 z-0"
+                    class="absolute -bottom-6 -right-6 w-32 h-32 bg-accent-900 rounded-full opacity-20 z-0"
                 ></div>
                 <div class="relative z-10 shadow-xs">
                     <!-- Book cover with 3D effect -->
@@ -70,29 +70,14 @@ class=" bg-gradient-to-r from-secondary-100 to-secondary-50 flex items-center ju
                     spiritual breakthroughs and deepen your connection with God
                     through this life-changing guide.
                 </p>
-                <div
-                    class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
-                >
-                    <a
-                    href="#"
-                    class="relative inline-flex items-center justify-center px-8 py-4 overflow-hidden font-bold text-gray-100 rounded-full group pulse-animation"
-                    >
-                    <span
-                        class="absolute inset-0 w-full h-full green-btn transition-all duration-300 ease-out group-hover:opacity-90"
-                    ></span>
-                    <span
-                        class="absolute top-0 left-0 w-48 h-48 -mt-1 -ml-12 transition-all duration-700 ease-out bg-white rotate-45 -translate-x-96 translate-y-12 opacity-30 group-hover:-translate-x-40"
-                    ></span>
-                    <span class="relative flex items-center gap-2 text-lg">
-                        <i class="fa-solid fa-book-open"></i>
-
-                        Get Your Copy Now
-                    </span>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#" class="btn-cta from-accent-600 to-accent-800 text-white animate-pulse-outward">
+                        <i class="fa-solid fa-book-open mr-1"></i>
+                        <span class="text-lg">Get Your Copy Now</span>
                     </a>
 
-                    <a
-                    href="#"
-                    class="border-2 border-primary-600 text-primary-700 px-6 py-4 rounded-full font-medium hover:bg-primary-50 transition"
+                    <a href="#" class="border-2 border-accent-600 text-accent-600 px-6 py-4 rounded-full font-medium
+                        hover:bg-white transform hover:-translate-y-[3px] transition"
                     >
                     <i class="fa-solid fa-circle-play"></i>
 

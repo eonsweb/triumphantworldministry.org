@@ -9,12 +9,22 @@ route::post('/prayer-request',[PrayerRequestController::class,'store'])->name('p
 Route::get('/', function () {
     return view('/home/index');
 });
+
+// About Routes
 Route::get('/about-us', function () {
     return view('/about/index');
 });
-Route::get('/about-us', function () {
-    return view('/about/index');
+Route::get('/who-we-are', function () {
+    return view('/about/who-we-are');
 });
+Route::get('/our-history', function () {
+    return view('/about/our-history');
+});
+Route::get('/pastoral-leadership', function () {
+    return view('/about/pastoral-leadership');
+});
+
+// End of About Routes
 Route::get('/events', function () {
     return view('/events/index');
 });

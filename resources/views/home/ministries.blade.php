@@ -1,20 +1,9 @@
 <section x-data="ministriesComponent" class="py-16 bg-gray-100">
             <div class="container mx-auto px-4">
-                <!-- Badge -->
+
                 <div class="text-center mb-12">
                 <!-- Badge -->
-                <div
-                    class="inline-flex items-center space-x-3 mb-6"
-                    data-aos="fade-up"
-                >
-                    <div class="h-px w-8 bg-gray-900"></div>
-                    <span
-                    class="text-lg font-semibold tracking-wide uppercase gradient-overlay bg-clip-text text-transparent"
-                    >Church Ministries</span
-                    >
-
-                    <div class="h-px w-8 bg-gray-900"></div>
-                </div>
+                <x-badge title="Church Ministries " />
                 <h1
                     class="text-3xl md:text-4xl font-bold font-Inter text-gray-900 mb-4 capitalize"
                 >
@@ -48,7 +37,7 @@
             <!-- Desktop Tab Content -->
             <div class="hidden md:block p-6 md:p-8">
                 <template x-for="ministry in ministries" :key="ministry.id">
-                <div x-show="activeTab === ministry.id" x-cloak class="ministry-card">
+                <div x-show="activeTab === ministry.id" x-cloak >
                     <div class="flex flex-col lg:flex-row gap-8">
                     <div class="lg:w-1/2 flex justify-center items-center">
                         <div class="relative">

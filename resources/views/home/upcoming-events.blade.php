@@ -2,18 +2,7 @@
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
                 <!-- Badge -->
-                <div
-                    class="inline-flex items-center space-x-3 mb-6"
-                    data-aos="fade-up"
-                >
-                    <div class="h-px w-8 bg-gray-900"></div>
-                    <span
-                    class="text-lg font-semibold tracking-wide uppercase gradient-overlay bg-clip-text text-transparent"
-                    >Upcoming Events</span
-                    >
-
-                    <div class="h-px w-8 bg-gray-900"></div>
-                </div>
+                    <x-badge title="Upcoming Events"/>
                 <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                     Breaking Bread: Serving Up The Latest News for our Members!
                 </h1>
