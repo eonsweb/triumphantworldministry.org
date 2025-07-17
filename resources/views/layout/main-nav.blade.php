@@ -24,7 +24,7 @@
                     </li>
                     <li class="nav-list relative">
                         <button @@click="toggleAboutDropdown"
-                            class="nav-link {{ Request::is('who-we-are','pastoral-leadership','our-history') ? 'active' :''}}">
+                            class="nav-link {{ Request::is('who-we-are','church-leadership','our-history') ? 'active' :''}}">
                             About Us
                             <i class="fas fa-chevron-down ml-2 text-xs transition-transform duration-300"
                                :class="aboutDropdown ? 'transform rotate-180' : ''"></i>
@@ -33,7 +33,7 @@
                         <div x-show="aboutDropdown"
                             @click.outside="aboutDropdown = false"
                             x-transition
-                            class="absolute left-0 mt-2 w-64 bg-white text-gray-900 rounded shadow-4xl z-50"  >
+                            class="absolute left-0 mt-2 w-64 bg-white text-gray-900 rounded shadow-2xl z-50"  >
                             <a href="/who-we-are" class="block px-6 py-3 hover:bg-gray-100 hover:rounded-t-lg">
                                 <i class="fas fa-users mr-3 text-secondary-400"></i>
                                 Who We Are
@@ -41,13 +41,12 @@
                             <a href="/our-history" class="block px-6 py-3 hover:bg-gray-100">
                                 <i class="fas fa-history mr-3 text-secondary-400"></i>
                             Our History</a>
-                            <a href="/pastoral-leadership" class="block px-6 py-3 hover:bg-gray-100 hover:rounded-b-lg">
+                            <a href="/church-leadership" class="block px-6 py-3 hover:bg-gray-100 hover:rounded-b-lg">
                             <i class="fas fa-user-tie mr-3 text-secondary-400"></i>
-                            Pastoral Leadership
+                            Church Leadership
                             </a>
                         </div>
                     </li>
-                    <li class="nav-list"><a href="/events" class="nav-link {{ Request::is('events*') ? 'active' : '' }}">Events</a></li>
                     <li class="nav-list"><a href="/sermons" class="nav-link {{ Request::is('sermons*') ? 'active' : '' }}">Sermons</a></li>
                     <li class="nav-list"><a href="/books" class="nav-link {{ Request::is('books*') ? 'active' : '' }}">Books</a></li>
                     <li class="nav-list"><a href="/blog" class="nav-link {{ Request::is('blog*') ? 'active' : '' }}">Blog</a></li>
@@ -103,7 +102,7 @@
                                 <span>Home</span>
                             </a>
                             <div>
-                                <button @click="aboutDropdown = !aboutDropdown" class="mobile-nav-link {{Request::is('who-we-are','our-history','pastoral-leadership') ? 'active' :''}}">
+                                <button @click="aboutDropdown = !aboutDropdown" class="mobile-nav-link {{Request::is('who-we-are','our-history','church-leadership') ? 'active' :''}}">
                                     <i class="fa-solid fa-circle-info mobile-nav-icon"></i>
                                     <span class="mr-2">About</span>
                                     <i class="fas fa-chevron-down text-xs" :class="aboutDropdown ? 'transform rotate-180' : ''"></i>
@@ -112,7 +111,7 @@
                                 <div x-show="aboutDropdown" class="pl-6 mt-2 space-y-2">
                                     <a href="/who-we-are" class="mobile-nav-link">Who We Are</a>
                                     <a href="/our-history" class="mobile-nav-link">Our History</a>
-                                    <a href="/pastoral-leadership" class="mobile-nav-link">Pastoral Leadership</a>
+                                    <a href="/church-leadership" class="mobile-nav-link">Church Leadership</a>
                                 </div>
                             </div>
 
@@ -141,7 +140,7 @@
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="lg:hidden cursor-pointer text-gray-300 hover:text-white focus:outline-none mr-6" x-on:click="toggle">
+                <button class="lg:hidden cursor-pointer text-gray-300 hover:text-white focus:outline-none mr-2" x-on:click="toggle">
                     <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                         stroke-linecap="round"

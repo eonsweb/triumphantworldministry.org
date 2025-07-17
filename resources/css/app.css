@@ -129,6 +129,13 @@
         @apply bg-primary-300!;
     }
 
+    #history .swiper-pagination-bullet {
+        @apply bg-gray-950!;
+    }
+    #history .swiper-pagination-bullet-active {
+        @apply bg-primary-600!;
+    }
+
     .book-shadow {
         filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
     }
@@ -193,4 +200,18 @@
 .ministry-icon {
     background: linear-gradient(135deg, #0d9488, #115e59);
     box-shadow: 0 4px 10px rgba(13, 148, 136, 0.3);
+}
+
+#history .swiper-slide {
+    opacity: 0 !important;
+    transition: opacity 0.6s ease-in-out;
+}
+
+#history .swiper-slide-active,
+#history .swiper-slide-duplicate-active {
+    opacity: 1 !important;
+}
+
+[x-cloak] {
+    display: none;
 }

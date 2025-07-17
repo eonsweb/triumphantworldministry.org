@@ -1,4 +1,4 @@
-<section x-data="WeeklyActivitiesComponent" class="py-16 bg-gray-900">
+<section x-data="WeeklyActivitiesComponent" x-cloak class="py-16 bg-gray-900">
             <!-- Badge -->
             <div class="text-center mb-12">
                <x-badge title="Weekly church Activities" />
@@ -51,12 +51,10 @@
                 <div class="swiper-pagination absolute -bottom-3!"></div>
 
                 <!-- Navigation buttons -->
-                <div
-                class="hidden! md:block swiper-button-prev absolute top-1/2! -translate-y-1/2! -left-8! h-[40px]! w-[40px]! bg-yellow-100 hover:bg-yellow-500 rounded-full after:text-[24px]! after:text-gray-600! hover:after:font-extrabold! transition-all duration-300"
+                <div class="hidden md:block! swiper-button-prev absolute top-1/2! -translate-y-1/2! -left-8! h-[40px]! w-[40px]! bg-yellow-100 hover:bg-yellow-500 rounded-full after:absolute after:text-[24px]! after:right-1/2 after:translate-x-1/2 after:top-1/2 after:-translate-y-1/2 after:text-gray-600!  hover:after:font-extrabold! transition-all duration-300"
                 ></div>
 
-                <div
-                class="hidden! md:block swiper-button-next absolute top-1/2! -translate-y-1/2! -right-8! h-[40px]! w-[40px]! bg-yellow-100 hover:bg-yellow-500 rounded-full after:text-[24px]! after:text-gray-600! hover:after:font-extrabold! transition-all duration-300"
+                <div class="hidden! md:block! swiper-button-next absolute top-1/2! -translate-y-1/2! -right-8! h-[40px]! w-[40px]! bg-yellow-100 hover:bg-yellow-500 rounded-full after:absolute  after:text-[24px]! after:left-1/2 after:-translate-x-1/2 after:top-1/2 after:-translate-y-1/2 after:text-gray-600! hover:after:font-extrabold! transition-all duration-300"
                 ></div>
             </div>
         </section>

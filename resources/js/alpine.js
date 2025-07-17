@@ -1,6 +1,6 @@
 import Alpine from "alpinejs";
 import Swiper from "swiper";
-import { Navigation, Autoplay, Pagination } from "swiper/modules";
+import { Navigation, Autoplay, Pagination, EffectFade } from "swiper/modules";
 
 document.addEventListener("alpine:init", () => {
     // color Mode
@@ -80,6 +80,65 @@ document.addEventListener("alpine:init", () => {
                 console.log(this.heroSlides);
             } catch (error) {
                 console.log("error loading heros slides", error.message);
+            }
+        },
+        init() {
+            this.fetchData();
+        },
+    }));
+
+    // History / History Component
+    Alpine.data("historySliderComponent", () => ({
+        historySlides: [],
+        swiperInstance: null,
+        initSwiper() {
+            console.log("Data slides:", this.historySlides.length);
+            const domSlides = document.querySelectorAll(
+                ".history .swiper-slide"
+            );
+            console.log("DOM slides:", domSlides.length);
+            this.$nextTick(() => {
+                // Destroy existing Swiper instance if it exists
+                setTimeout(() => {
+                    if (this.swiperInstance) {
+                        this.swiperInstance.destroy(true, true);
+                    }
+
+                    const shouldLoop = this.historySlides.length >= 1;
+                    this.swiperInstance = new Swiper(".history", {
+                        modules: [Navigation, Pagination, Autoplay, EffectFade],
+                        effect: "fade",
+                        fadeEffect: {
+                            crossFade: true, // Smooth cross-fade transition (both slides fade)
+                        },
+                        loop: shouldLoop,
+                        speed: 1000,
+                        autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".history ~ .swiper-pagination",
+                            clickable: true,
+                            // dynamicBullets: true,
+                        },
+                        navigation: {
+                            nextEl: ".history ~ .swiper-button-next",
+                            prevEl: ".history ~ .swiper-button-prev",
+                        },
+                    });
+                }, 100);
+            });
+        },
+        async fetchData() {
+            try {
+                const res = await fetch("./js/history.json");
+                this.historySlides = await res.json();
+
+                this.$nextTick(() => this.initSwiper());
+                console.log(this.historySlides);
+            } catch (error) {
+                console.log("error loading history slides", error.message);
             }
         },
         init() {

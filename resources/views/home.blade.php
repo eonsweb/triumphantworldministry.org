@@ -334,7 +334,7 @@
                             group-hover/composition:[transform:translate(-10%,20%)_scale(95%)]
                             hover:!z-[5] hover:[transform:translate(-10%,20%)_scale(110%)]"
                     >
-                        <img src="./image/image-composition/ic-1.jpg" alt="Pastoral Leadership" class="w-full h-full object-cover" />
+                        <img src="./image/image-composition/ic-1.jpg" alt="church Leadership" class="w-full h-full object-cover" />
                         <div
                         class="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs uppercase text-center p-3 opacity-0 group-hover/composition:opacity-100 transition-opacity"
                         >
@@ -351,7 +351,7 @@
                     >
                         <img src="./image/image-composition/ic-2.jpg" alt="Community Outreach" class="w-full h-full object-cover" />
                         <div class="absolute bottom-0 left-0 right-0 bg-black/70 text-white text-xs uppercase text-center p-3 opacity-0 group-hover/composition:opacity-100 transition-opacity">
-                        Pastoral Leadership
+                        church Leadership
                         </div>
                     </div>
 
@@ -403,7 +403,7 @@
                     data-aos="fade-up"
                     data-aos-delay="200"
                     >
-                    Our Pastoral team, led by Prophet Joseph John Darko and Rev Mrs.
+                    Our church team, led by Prophet Joseph John Darko and Rev Mrs.
                     Asabea Ayisi Darko, brings decades of experience and heartfelt
                     dedication to serving our congregation. We believe in creating a
                     nurturing environment where every individual can discover their

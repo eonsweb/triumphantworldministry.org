@@ -20,8 +20,8 @@ Route::get('/who-we-are', function () {
 Route::get('/our-history', function () {
     return view('/about/our-history');
 });
-Route::get('/pastoral-leadership', function () {
-    return view('/about/pastoral-leadership');
+Route::get('/church-leadership', function () {
+    return view('/about/church-leadership');
 });
 
 // End of About Routes
