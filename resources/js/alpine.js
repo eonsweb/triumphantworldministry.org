@@ -226,4 +226,92 @@ document.addEventListener("alpine:init", () => {
             this.fetchMinistries();
         },
     }));
+
+    // Leadership Component
+    Alpine.data("leadershipComponent", (selector = "") => ({
+        leadershipSlides: [],
+        swiperInstance: null,
+        selector,
+        isBeginning: true,
+        isEnd: false,
+        initSwiper() {
+            this.$nextTick(() => {
+                // Destroy existing Swiper instance if it exists
+                if (this.swiperInstance) {
+                    this.swiperInstance.destroy(true, true);
+                }
+
+                const container = document.querySelector(
+                    `${this.selector} .church-leadership`
+                );
+                const nextBtn = document.querySelector(
+                    `${this.selector} .custom-button-next`
+                );
+                const prevBtn = document.querySelector(
+                    `${this.selector} .custom-button-prev`
+                );
+
+                if (!container) {
+                    console.error(
+                        "Swiper container not found for selector:",
+                        this.selector
+                    );
+                    return;
+                }
+
+                this.swiperInstance = new Swiper(container, {
+                    modules: [Navigation],
+
+                    loop: false,
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    navigation: {
+                        nextEl: nextBtn,
+                        prevEl: prevBtn,
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                        },
+                    },
+                    on: {
+                        init: () => this.updateButtonStates(),
+                        slideChange: () => this.updateButtonStates(),
+                    },
+                });
+            });
+        },
+        // Update navigation button states
+        updateButtonStates() {
+            if (this.swiperInstance) {
+                this.isBeginning = this.swiperInstance.isBeginning;
+                this.isEnd = this.swiperInstance.isEnd;
+            }
+        },
+        async leadershipData() {
+            try {
+                const res = await fetch("./js/leadership.json");
+                this.leadershipSlides = await res.json();
+
+                this.$nextTick(() => this.initSwiper());
+
+                console.log("***** leadershipSlides");
+                console.log(this.leadershipSlides);
+            } catch (error) {
+                console.log("error loading leadershipSlides", error.message);
+            }
+        },
+        getLeadersByLevel(level) {
+            return this.leadershipSlides.filter((l) => l.level === level);
+        },
+        init() {
+            this.leadershipData();
+        },
+    }));
 });

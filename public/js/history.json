@@ -34,5 +34,29 @@
     {
         "id": 9,
         "image": "./image/church-gallery/history/9.jpg"
+    },
+    {
+        "id": 10,
+        "image": "./image/church-gallery/history/10.jpg"
+    },
+    {
+        "id": 11,
+        "image": "./image/church-gallery/history/11.jpg"
+    },
+    {
+        "id": 12,
+        "image": "./image/church-gallery/history/12.jpg"
+    },
+    {
+        "id": 13,
+        "image": "./image/church-gallery/history/13.jpg"
+    },
+    {
+        "id": 14,
+        "image": "./image/church-gallery/history/14.jpg"
+    },
+    {
+        "id": 16,
+        "image": "./image/church-gallery/history/16.jpg"
     }
 ]

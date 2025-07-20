@@ -5,5 +5,8 @@
 
 @section('content')
     @include("layout.header")
+    @include("about.founders")
+    @include("about.other-pastors")
+    @include("about.deacon")
 
 @endsection

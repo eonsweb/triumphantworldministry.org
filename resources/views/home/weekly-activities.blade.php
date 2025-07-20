@@ -16,12 +16,12 @@
                     <div class="swiper-slide">
                     <div class="flex flex-col h-[500px] bg-white rounded-xl shadow">
                         <div class="overflow-hidden h-1/2 rounded-t">
-                        <img
-                            :src="activity.image"
-                            alt="Dominion Service"
-                            class="w-full h-full rounded-t-xl object-cover hover:scale-110 hover:grayscale transition duration-500"
-                            @@error="$event.target.src='image/weekly-activities/default.jpg'"
-                        />
+                            <img
+                                :src="activity.image"
+                                alt="Dominion Service"
+                                class="w-full h-full rounded-t-xl object-cover hover:scale-110 hover:grayscale transition duration-500"
+                                @@error="$event.target.src='image/weekly-activities/default.jpg'"
+                            />
                         </div>
                         <div class="p-6 flex flex-col flex-1">
                         <h5 class="text-xl font-bold text-gray-900 mb-2" x-text="activity.title">

@@ -1,0 +1,200 @@
+[
+    {
+        "id": 1,
+        "level": 1,
+        "name": "Prophet Joseph John Darko",
+        "position": "Founder & First Senior Pastor",
+        "summary": "Joseph John Darko is the visionary founder and First Senior Pastor of our church. Called by God and anointed for leadership, he carries a prophetic mantle and a deep passion for winning souls, nurturing spiritual growth, and raising a generation grounded in truth and power. He is a natural storyteller with an extraordinary ability to help people understand the Bible in ways that apply to everyday life. With a heart for people and a commitment to the Gospel, Prophet Darko has led with wisdom, humility, and unwavering faith. Under his leadership, the church has grown into a vibrant, Spirit-filled community committed to prayer, discipleship, and Kingdom impact.",
+        "image": "image/church-gallery/leadership/prophetdarko.jpg",
+        "social": [
+            {
+                "platform": "facebook",
+                "url": "https://www.facebook.com/john.j.darko"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://www.instagram.com/john.j.darko"
+            },
+            {
+                "platform": "youtube",
+                "url": "https://www.youtube.com/@ProphetJohnDarko"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "level": 1,
+        "name": "Rev. Mrs. Asabea Ayisi Darko",
+        "position": "Co-Founder & Women's Ministry",
+        "summary": "Rev. Mrs. Asabea Ayisi Darko serves alongside Prophet Darko as Co-Founder and leads the Women's Ministry with grace and dedication. She is a passionate intercessor and teacher, empowering women to walk boldly in faith and purpose. Her wisdom, compassion, and nurturing spirit have made a lasting impact on countless lives within and beyond the church.",
+        "image": "image/church-gallery/leadership/revasabea.jpg",
+        "social": [
+            {
+                "platform": "facebook",
+                "url": "https://www.facebook.com/revasabea"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://www.instagram.com/revasabea"
+            },
+            {
+                "platform": "youtube",
+                "url": "https://www.youtube.com/@ProphetJohnDarko"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "level": 2,
+        "name": "Rev. Maxwell Asante",
+        "position": "Resident Pastor",
+        "summary": "Rev. Maxwell Asante serves as the Resident Pastor, overseeing the day-to-day spiritual care and operations of the church. With a heart for shepherding and a gift for teaching, he provides guidance, discipleship, and leadership to both new believers and mature members.",
+        "image": "image/church-gallery/leadership/rev-maxwell.jpg",
+        "social": [
+            {
+                "platform": "facebook",
+                "url": "https://www.facebook.com/rev-maxwell-asante"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://www.instagram.com/rev-maxwell-asante"
+            },
+            {
+                "platform": "youtube",
+                "url": "https://www.youtube.com/@ProphetJohnDarko"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "level": 2,
+        "name": "Rev. Ishmael Sam",
+        "position": "Media Pastor",
+        "summary": "Rev. Ishmael Sam leads the media ministry with excellence and vision, ensuring the Gospel message reaches a wider audience through digital platforms. His creative approach to communication and media strategy strengthens the church’s online and in-person outreach.",
+        "image": "image/church-gallery/leadership/rev-sam.jpg",
+        "social": [
+            {
+                "platform": "facebook",
+                "url": "https://www.facebook.com/"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://www.instagram.com/"
+            },
+            {
+                "platform": "youtube",
+                "url": "https://www.youtube.com/@ProphetJohnDarko"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "level": 2,
+        "name": "Rev. Kwame Nkrumah Ampofo",
+        "position": "Child Ministry",
+        "summary": "Rev. Kwame Nkrumah Ampofo is passionate about nurturing the faith of our youngest members. As the Child Ministry Pastor, he brings creativity, patience, and deep biblical knowledge to engage children in meaningful spiritual formation. His love for children and commitment to their growth in Christ is evident in every program and interaction.",
+        "image": "image/church-gallery/leadership/rev-ampofo.jpg",
+        "social": [
+            {
+                "platform": "facebook",
+                "url": "https://www.facebook.com/"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://www.instagram.com/"
+            },
+            {
+                "platform": "youtube",
+                "url": "https://www.youtube.com/@ProphetJohnDarko"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "level": 2,
+        "name": "Rev. Yeboah",
+        "position": "Evangelism Pastor",
+        "summary": "Rev. Yeboah is passionate about soul-winning and community outreach. As Evangelism Pastor, he mobilizes teams and equips members to spread the Gospel with boldness and compassion, fulfilling the Great Commission both locally and beyond.",
+        "image": "image/church-gallery/leadership/revyeboah.jpg",
+        "social": [
+            {
+                "platform": "facebook",
+                "url": "https://www.facebook.com/"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://www.instagram.com/"
+            },
+            {
+                "platform": "youtube",
+                "url": "https://www.youtube.com/@ProphetJohnDarko"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "level": 3,
+        "name": "Deaconess Rebecca Achok",
+        "position": "Women's Ministry",
+        "summary": "Deaconess Rebecca Achok plays a vital role in supporting and mentoring women within the church. Her heart for service and spiritual encouragement strengthens the bonds of sisterhood among the women’s fellowship.",
+        "image": "image/church-gallery/leadership/rebeccaachok.jpg",
+        "social": [
+            {
+                "platform": "facebook",
+                "url": "https://www.facebook.com/"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://www.instagram.com/"
+            },
+            {
+                "platform": "youtube",
+                "url": "https://www.youtube.com/@ProphetJohnDarko"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "level": 3,
+        "name": "Deacon Natheniel",
+        "position": "Men's Ministry",
+        "summary": "Deacon Natheniel leads the Men’s Ministry with integrity and vision, fostering spiritual growth and accountability among men in the church. His leadership encourages men to be Christ-like leaders in their homes, workplaces, and communities.",
+        "image": "image/church-gallery/leadership/natheniel.jpg",
+        "social": [
+            {
+                "platform": "facebook",
+                "url": "https://www.facebook.com/"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://www.instagram.com/"
+            },
+            {
+                "platform": "youtube",
+                "url": "https://www.youtube.com/@ProphetJohnDarko"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "level": 3,
+        "name": "Deacon Prince Acheampong",
+        "position": "Equipment & Facilities",
+        "summary": "Deacon Prince Acheampong oversees the Equipment and Facilities department, ensuring that the church’s physical resources are well-maintained and operational. His diligence and attention to detail support the smooth running of all church events and services.",
+        "image": "image/church-gallery/leadership/princeacheampong.jpg",
+        "social": [
+            {
+                "platform": "facebook",
+                "url": "https://www.facebook.com/"
+            },
+            {
+                "platform": "instagram",
+                "url": "https://www.instagram.com/"
+            },
+            {
+                "platform": "youtube",
+                "url": "https://www.youtube.com/@ProphetJohnDarko"
+            }
+        ]
+    }
+]

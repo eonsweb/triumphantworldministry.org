@@ -5,5 +5,5 @@
 
 @section('content')
     @include("layout.header")
-
+    @include("blog.blog")
 @endsection
