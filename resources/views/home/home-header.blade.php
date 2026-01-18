@@ -18,7 +18,7 @@
             <div class="inline-flex items-center space-x-3 text-white">
             <div class="h-px w-8 bg-white"></div>
             <span class="text-lg font-semibold tracking-widest uppercase"
-                >2025 THEME</span
+                >2026 THEME</span
             >
             <div class="h-px w-8 bg-white"></div>
             </div>
@@ -28,7 +28,7 @@
             >
             <span
                 class="block mb-4 bg-gradient-to-r from-primary-100 to-primary-200 bg-clip-text text-transparent"
-                >Grace Upon Grace</span
+                >Possess The Land</span
             >
             </h1>
 
@@ -38,14 +38,14 @@
             data-aos="fade-up"
             data-aos-delay="100"
             >
-            And of His fullness we have all received, and grace for grace.
+            Every place that the sole of your foot will tread upon I have given you, as I said to Moses
             </p>
             <p
             class="text-lg text-white tracking-widest"
             data-aos="fade-up"
             data-aos-delay="200"
             >
-            John 1:16
+            Joshua 1:3 (NKJV)
             </p>
 
             <!-- CTA Buttons -->
